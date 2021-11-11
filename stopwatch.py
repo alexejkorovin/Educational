@@ -3,7 +3,7 @@
 #-----------------------------------------------------------------------
 
 import sys
-import time1
+import time
 import stdio
 
 #-----------------------------------------------------------------------
@@ -12,14 +12,14 @@ class Stopwatch:
 
     # Construct self and start it running.
     def __init__(self):
-        self._creationTime = time1.time1()  # Creation time
+        self._creationTime = time.time()  # Creation time
 
     # Return the elapsed time since creation of self, in seconds.
     def elapsedTime(self):
-        return time1.time1() - self._creationTime
+        return time.time() - self._creationTime
 
     def restart(self):
-        self._creationTime = time1.time1()
+        self._creationTime = time.time()
 
 
 #-----------------------------------------------------------------------
